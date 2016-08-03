@@ -1,0 +1,55 @@
+body{
+    font-family: Lato, sans-serif;
+    color: #D0C4AB;
+}
+a:link {
+    color: #D0C4AB;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #D0C4AB;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.container {
+    background-color: #131A2D;
+}
+.header {
+    background-color: white;
+}
+.img-responsive{
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.text-name {
+    font-family: Paytone+One;
+    font-weight: 600;
+    font-size: 50px;
+    color: #0f0f0f;
+
+}
+.text-title {
+    font-size: 20px;
+    color: #0f0f0f;
+}
+hr{
+    border-bottom: 4px solid #D0C4AB;
+}
+
+.text-project{
+    font-size: 40px;
+}
+
