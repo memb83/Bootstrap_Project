@@ -1400,10 +1400,14 @@ address {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  color: #0f0f0f;
+  font-family: Paytone+One, sans-serif;
 }
 .modal-body {
   position: relative;
   padding: 15px;
+  color: #0f0f0f;
+  font-family: Lato, sans-serif;
 }
 .modal-footer {
   padding: 15px;

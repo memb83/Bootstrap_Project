@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-      <link href='https://fonts.googleapis.com/css?family=Lato, Paytone+One' rel='stylesheet' type='text/css'>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Lato,Paytone+One' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/jquery.js"></script>
+      <title>My Udacity Portfolio Page</title>
+
   </head>
   <body>
   <div class="container">
     <div class="row header">
-      <div class="col-md-6"><img src="./bootstrap-prestructure_files/100x100"></div>
+      <div class="col-md-6"><img src="images/menu%20100x100.jpg" alt="Small icon" data-toggle="modal" data-target="#modal-menu"></div>
       <div class="col-md-6 text-uppercase text-right">
-        <h1 class="text-name">Jane Doette</h1>
-        <h4 class="text-title">Front-end Ninja</h4>
+        <h1 class="text-name">Mark Brown</h1>
+        <h4 class="text-title">Front-end Web Designer</h4>
       </div>
       <div class="col-md-12">
         <hr>
@@ -22,7 +24,7 @@
     </div>
 
     <div class="row">
-      <img class="img-responsive col-md-12" src="./bootstrap-prestructure_files/1140x350" alt="Main image">
+      <img class="img-responsive col-md-12" src="images/main.png" alt="Main image">
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -31,28 +33,58 @@
     </div>
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="./bootstrap-prestructure_files/555x300" data-toggle="modal" data-target="#project1">
-        <h3 class="text-project text-uppercase">Appify</h3>
-        <p><a href="http://github.com/">Link to project</a></p>
+        <img class="img-responsive" src="images/project1.png" alt="Project One" data-toggle="modal" data-target="#project1">
+        <h3 class="text-project text-uppercase">Homepage</h3>
+        <p><a href="http://localhost:63343/Web_Portfolio-master/portfolio.html">Link to project</a></p>
       </div>
       <div class="col-md-6">
-        <img src="./bootstrap-prestructure_files/555x300" data-toggle="modal" data-target="#project2">
+        <img src="./bootstrap-prestructure_files/555x300" alt="Project Two" data-toggle="modal" data-target="#project2">
         <h3 class="text-project text-uppercase">Appify</h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
     </div>
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="./bootstrap-prestructure_files/555x300" data-toggle="modal" data-target="#project3">
+        <img src="./bootstrap-prestructure_files/555x300" alt="Project Three" data-toggle="modal" data-target="#project3">
         <h3 class="text-project text-uppercase">Appify</h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
       <div class="col-md-6">
-        <img src="./bootstrap-prestructure_files/555x300" data-toggle="modal" data-target="#project4">
+        <img src="./bootstrap-prestructure_files/555x300" alt="Project Four" data-toggle="modal" data-target="#project4">
         <h3 class="text-project text-uppercase">Appify</h3>
         <p class="text-hyperlink"><a href="http://github.com/">Link to project</a></p>
       </div>
     </div>
+  </div>
+
+  <!-- Modal Menu -->
+  <div class="modal fade" id="modal-menu" tabindex="-1" role="dialog" aria-labelledby="menu" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="modal-menu-label">Site Navigation</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" height="200px" width="600px" src="images/main.png" alt="Main image">
+                  <div class="col-md-6 nav-menu">
+                      <ul>
+                          <li>Main Website</li>
+                          <li>Project One</li>
+
+                      </ul>
+                  </div>
+                  <div class="col-md-6 nav-menu">
+                      <ul>
+                          <li>Project Two</li>
+                          <li>Project Three</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
   </div>
 
   <!-- Modal 1 -->
@@ -63,9 +95,13 @@
                   <h4 class="modal-title" id="myModalLabel1">Favorite App Page</h4>
               </div>
               <div class="modal-body">
-                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
-                  This was my first project in this class. I learned a lot about HTML and CSS.
+                  <a href="http://localhost:63343/Web_Portfolio-master/portfolio.html" target="_blank">
+                      <img class="img-responsive" src="images/project1.png" alt="Project One">
+                      This is my portfolio website, where you just came from. It should still be open in your previous
+                      window, or open it again here.
+                  </a>
               </div>
+
               <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
@@ -81,7 +117,7 @@
                   <h4 class="modal-title" id="myModalLabel2">Favorite App Page</h4>
               </div>
               <div class="modal-body">
-                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
+                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300" alt="Project Two">
                   This was my first project in this class. I learned a lot about HTML and CSS.
               </div>
               <div class="modal-footer">
@@ -99,7 +135,7 @@
                   <h4 class="modal-title" id="myModalLabel3">Favorite App Page</h4>
               </div>
               <div class="modal-body">
-                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
+                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300" alt="Project Three">
                   This was my first project in this class. I learned a lot about HTML and CSS.
               </div>
               <div class="modal-footer">
@@ -117,7 +153,7 @@
                   <h4 class="modal-title" id="myModalLabel4">Favorite App Page</h4>
               </div>
               <div class="modal-body">
-                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
+                  <img class="img-responsive" src="./bootstrap-prestructure_files/555x300" alt="Project Four">
                   This was my first project in this class. I learned a lot about HTML and CSS.
               </div>
               <div class="modal-footer">

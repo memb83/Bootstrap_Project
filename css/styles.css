@@ -30,12 +30,12 @@ a:active {
 }
 .img-responsive{
     padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .text-name {
-    font-family: Paytone+One;
+    font-family: Paytone+One, sans-serif;
     font-weight: 600;
     font-size: 50px;
     color: #0f0f0f;
@@ -45,11 +45,16 @@ a:active {
     font-size: 20px;
     color: #0f0f0f;
 }
+
 hr{
     border-bottom: 4px solid #D0C4AB;
 }
 
 .text-project{
     font-size: 40px;
+}
+
+.nav-menu{
+    line-height: 300%;
 }
 
